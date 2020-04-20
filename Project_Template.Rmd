@@ -1,0 +1,98 @@
+---
+output: 
+  pdf_document:
+    keep_tex: yes
+    fig_caption: yes
+    number_sections: yes
+geometry: margin=2.54cm
+title: "Insert title of project here"
+subtitle: https://github.com/sfburch/SBurchFinalProject2020
+author: Samantha Burch
+fontsize: 12pt
+mainfont: Times New Roman
+
+---
+
+\newpage
+\tableofcontents 
+\newpage
+\listoftables 
+\newpage
+\listoffigures 
+\newpage
+
+```{r setup, include=FALSE}
+# Set your working directory
+setwd("~/Desktop/Data Analytics/SBurchFinalProject2020")
+getwd()
+
+# Load your packages
+library('tidyverse')
+library('knitr')
+library(viridis)
+install.packages("rvest")
+library(rvest)
+install.packages("ggrepel")
+library(ggrepel)
+
+# Set your ggplot theme
+mytheme <- theme_classic() +
+  theme(axis.text = element_text(color = "dark blue"), 
+        legend.position = "top")
+theme_set(mytheme)
+```
+
+```{r, echo=FALSE}
+# Load your datasets
+CH4.Emissions.raw <- read.csv("./Data/Raw/CH4_emissions_raw.csv")
+NDC.SDG.raw <- read.csv("./Data/Raw/ndc_sdg_raw.csv")
+
+#Look at column names
+colnames(CH4.Emissions.raw)
+colnames(NDC.SDG.raw)
+
+#Process the data - Select only columns of interest for both
+
+#Combine datasets
+
+#Save the new process dataset
+```
+
+
+# Rationale and Research Questions
+
+
+
+\newpage
+
+# Dataset Information
+
+
+
+\newpage
+
+# Exploratory Analysis 
+what they need or want before actual analysis; distributions of variables of interest; time series sampling over time; potential relationships between variables; here's the intro to the data set, might not be statsistical but help someone orient themselves, provide rationale
+
+
+\newpage
+
+# Analysis
+
+
+## Question 1: <insert specific question here and add additional subsections for additional questions below, if needed>
+
+## Question 2: 
+
+
+
+
+\newpage
+
+# Summary and Conclusions
+
+
+\newpage
+
+# References
+<add references here if relevant, otherwise delete this section> 

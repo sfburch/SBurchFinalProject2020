@@ -1,0 +1,195 @@
+Country,Data source,Sector,Gas,Unit,2016,2015,2014,2013,2012,2011
+India,CAIT,Agriculture,CH4,MtCO₂e,491.33,486.03,487.7,487.6,484.57,487.62
+China,CAIT,Agriculture,CH4,MtCO₂e,363.78,360.71,355.27,354.16,352.9,355.19
+Brazil,CAIT,Agriculture,CH4,MtCO₂e,339.93,338.01,333.62,330.38,334.73,334.38
+European Union (27),CAIT,Agriculture,CH4,MtCO₂e,219.52,219.22,217.51,215.75,216.05,216.84
+United States,CAIT,Agriculture,CH4,MtCO₂e,198.27,191.72,191.42,190.87,193.95,196.42
+Pakistan,CAIT,Agriculture,CH4,MtCO₂e,122.7,119.39,116.59,112.97,108.3,106.16
+Indonesia,CAIT,Agriculture,CH4,MtCO₂e,109.8,103.87,101.07,98.12,100.41,97.05
+Argentina,CAIT,Agriculture,CH4,MtCO₂e,83.87,81.72,82.13,80.99,79.32,76.85
+Australia,CAIT,Agriculture,CH4,MtCO₂e,69.09,86.49,91.59,81.27,123.03,122.79
+Ethiopia,CAIT,Agriculture,CH4,MtCO₂e,67.32,65.44,63.98,62.03,60.08,58.12
+Myanmar,CAIT,Agriculture,CH4,MtCO₂e,59.97,59.13,57.68,56.69,56.07,56.11
+Mexico,CAIT,Agriculture,CH4,MtCO₂e,58.56,57.78,56.9,56.32,55.61,57.61
+Bangladesh,CAIT,Agriculture,CH4,MtCO₂e,58.37,59.26,59.2,58.94,58.81,58.73
+Russia,CAIT,Agriculture,CH4,MtCO₂e,52.52,52.24,53.22,53.56,53.88,53.77
+Nigeria,CAIT,Agriculture,CH4,MtCO₂e,51.59,43.57,42.88,41.97,41.31,39.28
+Vietnam,CAIT,Agriculture,CH4,MtCO₂e,50.22,50.3,49.79,49.96,49.5,49.51
+Philippines,CAIT,Agriculture,CH4,MtCO₂e,48.53,49.23,49.87,49.99,49.6,48.6
+Thailand,CAIT,Agriculture,CH4,MtCO₂e,47.1,48.59,52.65,57.35,59.24,59.66
+Sudan,CAIT,Agriculture,CH4,MtCO₂e,44.85,44.7,44.16,44.25,44.42,42.81
+Chad,CAIT,Agriculture,CH4,MtCO₂e,43.1,40.19,13.51,13.81,14.13,13.96
+France,CAIT,Agriculture,CH4,MtCO₂e,42.7,42.97,42.9,42.78,42.63,42.9
+Colombia,CAIT,Agriculture,CH4,MtCO₂e,39.36,38.8,38.93,39.62,40.26,43.01
+Tanzania,CAIT,Agriculture,CH4,MtCO₂e,36.8,36.62,34.75,33.9,32.5,31.92
+Germany,CAIT,Agriculture,CH4,MtCO₂e,33.83,34.26,34.57,34.27,33.98,33.95
+Kenya,CAIT,Agriculture,CH4,MtCO₂e,28.96,26.53,26.16,25.82,26.59,26.63
+South Sudan,CAIT,Agriculture,CH4,MtCO₂e,28.34,27.74,27.16,26.59,26.9,26.32
+New Zealand,CAIT,Agriculture,CH4,MtCO₂e,28.08,28.01,28.84,28.53,28.64,28.12
+United Kingdom,CAIT,Agriculture,CH4,MtCO₂e,27.83,27.5,27.35,27.07,26.96,26.93
+Venezuela,CAIT,Agriculture,CH4,MtCO₂e,26.67,27.79,28.24,28.27,28.11,24.05
+Spain,CAIT,Agriculture,CH4,MtCO₂e,24.04,23.89,23.02,22.32,22.5,22.94
+Canada,CAIT,Agriculture,CH4,MtCO₂e,23.8,23.85,24.86,25.19,24.41,24.27
+Paraguay,CAIT,Agriculture,CH4,MtCO₂e,21.15,21.47,21.83,20.5,20.12,19.05
+Italy,CAIT,Agriculture,CH4,MtCO₂e,20.82,20.49,20.39,20.58,21.11,20.94
+Uzbekistan,CAIT,Agriculture,CH4,MtCO₂e,20.71,19.37,18.63,17.84,17.32,16.16
+Turkey,CAIT,Agriculture,CH4,MtCO₂e,20.23,20.39,20.11,19.36,17.65,16.11
+Mali,CAIT,Agriculture,CH4,MtCO₂e,20.11,18.13,17.64,17.51,17.01,16.67
+Uruguay,CAIT,Agriculture,CH4,MtCO₂e,19.65,19.53,19.55,19.25,19.14,19.73
+Nepal,CAIT,Agriculture,CH4,MtCO₂e,19.16,19.16,19.33,19.22,19.27,18.89
+Angola,CAIT,Agriculture,CH4,MtCO₂e,18.8,18.9,18.06,18.81,18.2,19.06
+Bolivia,CAIT,Agriculture,CH4,MtCO₂e,18.71,18.25,17.7,18.22,18.07,17.72
+Peru,CAIT,Agriculture,CH4,MtCO₂e,17.89,17.69,17.6,17.7,17.75,17.64
+Iran,CAIT,Agriculture,CH4,MtCO₂e,17.51,16.97,16.02,20.9,21.02,20.82
+Niger,CAIT,Agriculture,CH4,MtCO₂e,17.51,16.68,16.03,15.29,14.53,13.9
+Uganda,CAIT,Agriculture,CH4,MtCO₂e,17.14,15.99,15.33,15.06,15.04,14.17
+Cambodia,CAIT,Agriculture,CH4,MtCO₂e,17.09,17,16.99,17.45,17.79,18.34
+Somalia,CAIT,Agriculture,CH4,MtCO₂e,16.02,16.3,16.22,16.17,16.13,15.96
+South Africa,CAIT,Agriculture,CH4,MtCO₂e,15.91,16.61,17.08,17.13,17.45,17.27
+Egypt,CAIT,Agriculture,CH4,MtCO₂e,15.57,15.38,15.99,16.09,16.73,16.11
+Ireland,CAIT,Agriculture,CH4,MtCO₂e,15.45,14.83,14.64,14.46,14.23,13.7
+Madagascar,CAIT,Agriculture,CH4,MtCO₂e,15.07,14.55,14.9,14.76,16.27,15.83
+Mongolia,CAIT,Agriculture,CH4,MtCO₂e,14.98,13.93,12.51,10.88,10.1,9.05
+Kazakhstan,CAIT,Agriculture,CH4,MtCO₂e,14.42,15.12,14.22,12.86,13.77,13.96
+Japan,CAIT,Agriculture,CH4,MtCO₂e,14.12,14.33,14.83,15.11,15.1,15.19
+Poland,CAIT,Agriculture,CH4,MtCO₂e,13.98,14.25,14.18,14.13,14.17,14.38
+Burkina Faso,CAIT,Agriculture,CH4,MtCO₂e,13.74,13.03,12.87,12.66,12.4,12.39
+Guinea,CAIT,Agriculture,CH4,MtCO₂e,13.33,11.98,11.91,11.66,11.34,10.7
+Democratic Republic of the Congo,CAIT,Agriculture,CH4,MtCO₂e,13.21,13.54,12.82,13.07,12.4,12.41
+Netherlands,CAIT,Agriculture,CH4,MtCO₂e,13.15,13.07,12.56,12.24,11.94,12.01
+Zambia,CAIT,Agriculture,CH4,MtCO₂e,12.53,12.85,12.48,12.72,12.58,11.05
+Central African Republic,CAIT,Agriculture,CH4,MtCO₂e,12.13,10.93,10.5,11,10.2,12.38
+Ukraine,CAIT,Agriculture,CH4,MtCO₂e,11.07,11.5,12.66,13.35,13,13.16
+Afghanistan,CAIT,Agriculture,CH4,MtCO₂e,10.66,10.88,11.48,11.29,11.38,11.54
+Belarus,CAIT,Agriculture,CH4,MtCO₂e,9.25,9.37,9.37,9.39,9.26,9.06
+Mozambique,CAIT,Agriculture,CH4,MtCO₂e,9.25,10.19,10.92,10.81,10.46,9.88
+South Korea,CAIT,Agriculture,CH4,MtCO₂e,9.21,9.24,9.14,9.4,9.65,9.38
+Ecuador,CAIT,Agriculture,CH4,MtCO₂e,8.57,8.61,9.28,10.38,10.36,10.39
+Romania,CAIT,Agriculture,CH4,MtCO₂e,8.4,8.34,8.23,8.15,8.1,8.14
+Nicaragua,CAIT,Agriculture,CH4,MtCO₂e,7.83,7.9,7.58,7.23,6.88,6.62
+Cuba,CAIT,Agriculture,CH4,MtCO₂e,7.81,7.64,8.15,8.24,8.23,8.27
+Cameroon,CAIT,Agriculture,CH4,MtCO₂e,7.54,7.4,7.25,7.39,7.09,6.9
+Morocco,CAIT,Agriculture,CH4,MtCO₂e,7.32,7.25,7.24,7.1,6.95,6.94
+Laos,CAIT,Agriculture,CH4,MtCO₂e,7.2,6.98,6.82,6.63,6.69,6.18
+Algeria,CAIT,Agriculture,CH4,MtCO₂e,6.98,7.04,6.95,6.57,6.37,6.02
+Turkmenistan,CAIT,Agriculture,CH4,MtCO₂e,6.92,6.74,6.6,6.49,6.33,5.77
+Senegal,CAIT,Agriculture,CH4,MtCO₂e,6.87,6.28,6.46,6.46,6.13,6.57
+Zimbabwe,CAIT,Agriculture,CH4,MtCO₂e,6.61,6.58,6.26,7.33,7.61,7.94
+Mauritania,CAIT,Agriculture,CH4,MtCO₂e,6.47,6.21,6.12,5.92,5.76,5.59
+Belgium,CAIT,Agriculture,CH4,MtCO₂e,6.25,6.29,6.22,6.13,6.23,6.33
+Dominican Republic,CAIT,Agriculture,CH4,MtCO₂e,6.2,6.01,6.02,6,5.97,5.99
+Guatemala,CAIT,Agriculture,CH4,MtCO₂e,6.1,5.97,5.84,5.6,5.54,5.46
+Denmark,CAIT,Agriculture,CH4,MtCO₂e,6.06,6.04,6.02,6.09,6.14,6.16
+Ghana,CAIT,Agriculture,CH4,MtCO₂e,5.38,5.53,5.26,5.31,4.82,5.62
+Chile,CAIT,Agriculture,CH4,MtCO₂e,5.23,5.08,5.63,5.64,6.79,6.78
+Austria,CAIT,Agriculture,CH4,MtCO₂e,4.83,4.84,4.83,4.83,4.87,4.96
+Portugal,CAIT,Agriculture,CH4,MtCO₂e,4.78,4.74,4.59,4.47,4.54,4.56
+Malaysia,CAIT,Agriculture,CH4,MtCO₂e,4.73,4.74,4.63,4.87,4.87,4.9
+Yemen,CAIT,Agriculture,CH4,MtCO₂e,4.63,4.77,4.83,4.75,4.68,4.63
+Honduras,CAIT,Agriculture,CH4,MtCO₂e,4.49,4.41,4.42,4.4,4.34,4.31
+Tajikistan,CAIT,Agriculture,CH4,MtCO₂e,4.46,4.32,4.15,4.09,3.95,3.74
+Greece,CAIT,Agriculture,CH4,MtCO₂e,4.29,4.19,4.3,4.4,4.63,4.64
+Azerbaijan,CAIT,Agriculture,CH4,MtCO₂e,4.02,4.07,4.04,4.02,3.98,3.94
+Syria,CAIT,Agriculture,CH4,MtCO₂e,3.95,3.88,3.87,3.92,3.93,3.93
+Switzerland,CAIT,Agriculture,CH4,MtCO₂e,3.93,3.95,3.99,4,4.03,4.06
+Sri Lanka,CAIT,Agriculture,CH4,MtCO₂e,3.93,4.14,4,4.97,4.73,4.72
+Namibia,CAIT,Agriculture,CH4,MtCO₂e,3.83,4.09,4.18,4.53,7.83,7.19
+Côte d'Ivoire,CAIT,Agriculture,CH4,MtCO₂e,3.65,3.21,3.08,3.55,3.14,3.11
+Iraq,CAIT,Agriculture,CH4,MtCO₂e,3.6,3.48,4.64,4.62,4.9,4.77
+North Korea,CAIT,Agriculture,CH4,MtCO₂e,3.55,3.53,3.78,3.9,4.02,4.01
+Kyrgyzstan,CAIT,Agriculture,CH4,MtCO₂e,3.46,3.37,3.32,3.21,3.1,3.03
+Sweden,CAIT,Agriculture,CH4,MtCO₂e,3.38,3.38,3.48,3.48,3.5,3.54
+Serbia,CAIT,Agriculture,CH4,MtCO₂e,3.31,3.44,3.48,3.4,3.47,3.53
+Benin,CAIT,Agriculture,CH4,MtCO₂e,3.29,3,2.98,3.04,2.94,2.99
+Haiti,CAIT,Agriculture,CH4,MtCO₂e,3.08,3.02,3.01,3.02,3.01,3.01
+Czech Republic,CAIT,Agriculture,CH4,MtCO₂e,3.02,3,2.95,2.92,2.91,2.92
+Eritrea,CAIT,Agriculture,CH4,MtCO₂e,2.97,2.95,2.93,2.92,2.9,2.88
+Malawi,CAIT,Agriculture,CH4,MtCO₂e,2.77,2.59,2.42,2.29,2.2,2.06
+Saudi Arabia,CAIT,Agriculture,CH4,MtCO₂e,2.77,2.74,2.7,2.81,2.61,2.55
+Sierra Leone,CAIT,Agriculture,CH4,MtCO₂e,2.64,2.12,2.31,2.42,2.48,2.12
+Botswana,CAIT,Agriculture,CH4,MtCO₂e,2.62,2.72,3.23,4.3,5.1,12.46
+Norway,CAIT,Agriculture,CH4,MtCO₂e,2.52,2.47,2.43,2.46,2.47,2.49
+Hungary,CAIT,Agriculture,CH4,MtCO₂e,2.5,2.47,2.44,2.41,2.29,2.36
+Costa Rica,CAIT,Agriculture,CH4,MtCO₂e,2.46,2.32,2.31,2.33,2.28,2.37
+Panama,CAIT,Agriculture,CH4,MtCO₂e,2.41,2.39,2.52,2.66,2.66,2.67
+Finland,CAIT,Agriculture,CH4,MtCO₂e,2.3,2.31,2.31,2.31,2.31,2.32
+Tunisia,CAIT,Agriculture,CH4,MtCO₂e,2.13,2.19,2.22,2.2,2.2,2.29
+Albania,CAIT,Agriculture,CH4,MtCO₂e,2.1,2.11,2.1,2.07,2.06,2.03
+Lithuania,CAIT,Agriculture,CH4,MtCO₂e,1.92,1.97,1.93,1.98,2.05,2.1
+Bulgaria,CAIT,Agriculture,CH4,MtCO₂e,1.83,1.85,1.9,1.79,1.9,1.89
+Rwanda,CAIT,Agriculture,CH4,MtCO₂e,1.7,1.79,1.55,1.58,1.57,1.59
+Libya,CAIT,Agriculture,CH4,MtCO₂e,1.57,1.57,1.59,1.6,1.58,1.58
+Bosnia and Herzegovina,CAIT,Agriculture,CH4,MtCO₂e,1.54,1.56,1.53,1.55,1.54,1.59
+El Salvador,CAIT,Agriculture,CH4,MtCO₂e,1.52,1.65,1.7,1.48,1.82,1.68
+Togo,CAIT,Agriculture,CH4,MtCO₂e,1.5,1.58,1.37,1.43,1.33,1.41
+Croatia,CAIT,Agriculture,CH4,MtCO₂e,1.41,1.41,1.45,1.43,1.5,1.5
+Republic of Congo,CAIT,Agriculture,CH4,MtCO₂e,1.36,1.38,1.23,1.35,1.27,1.34
+Guyana,CAIT,Agriculture,CH4,MtCO₂e,1.22,1.53,1.48,1.34,1.2,1.17
+United Arab Emirates,CAIT,Agriculture,CH4,MtCO₂e,1.22,1.21,1.17,1.08,0.98,0.97
+Georgia,CAIT,Agriculture,CH4,MtCO₂e,1.2,1.19,1.42,1.38,1.35,1.23
+Slovakia,CAIT,Agriculture,CH4,MtCO₂e,1.13,1.15,1.16,1.18,1.16,1.18
+Guinea-Bissau,CAIT,Agriculture,CH4,MtCO₂e,1.11,1.14,1.06,1.12,1.12,1.02
+Latvia,CAIT,Agriculture,CH4,MtCO₂e,1.08,1.09,1.07,1.04,1.03,1.03
+Slovenia,CAIT,Agriculture,CH4,MtCO₂e,1.08,1.04,1.03,1.04,1.05,1.07
+Oman,CAIT,Agriculture,CH4,MtCO₂e,1.04,1.02,1,0.99,0.79,0.78
+Burundi,CAIT,Agriculture,CH4,MtCO₂e,0.98,1.15,1.15,1.19,0.99,0.99
+Papua New Guinea,CAIT,Agriculture,CH4,MtCO₂e,0.97,0.99,0.98,0.94,0.95,0.93
+Gambia,CAIT,Agriculture,CH4,MtCO₂e,0.93,0.94,0.94,0.91,0.84,0.75
+Macedonia,CAIT,Agriculture,CH4,MtCO₂e,0.91,0.89,0.87,0.86,0.87,0.93
+Armenia,CAIT,Agriculture,CH4,MtCO₂e,0.81,0.79,0.78,0.76,0.68,0.65
+Lesotho,CAIT,Agriculture,CH4,MtCO₂e,0.79,0.81,0.82,0.84,0.91,0.91
+Timor-Leste,CAIT,Agriculture,CH4,MtCO₂e,0.74,0.7,0.65,0.64,0.69,0.64
+Moldova,CAIT,Agriculture,CH4,MtCO₂e,0.73,0.75,0.78,0.77,0.81,0.87
+Estonia,CAIT,Agriculture,CH4,MtCO₂e,0.66,0.7,0.69,0.67,0.66,0.65
+Fiji,CAIT,Agriculture,CH4,MtCO₂e,0.66,0.66,0.65,0.65,0.65,0.65
+Jordan,CAIT,Agriculture,CH4,MtCO₂e,0.65,0.56,0.56,0.51,0.49,0.49
+Eswatini,CAIT,Agriculture,CH4,MtCO₂e,0.6,0.61,0.63,0.63,0.63,0.63
+Israel,CAIT,Agriculture,CH4,MtCO₂e,0.58,0.59,0.57,0.55,0.53,0.53
+Suriname,CAIT,Agriculture,CH4,MtCO₂e,0.5,0.49,0.51,0.49,0.46,0.49
+Djibouti,CAIT,Agriculture,CH4,MtCO₂e,0.47,0.47,0.47,0.47,0.47,0.46
+Luxembourg,CAIT,Agriculture,CH4,MtCO₂e,0.44,0.43,0.42,0.41,0.4,0.41
+Bhutan,CAIT,Agriculture,CH4,MtCO₂e,0.42,0.42,0.44,0.47,0.46,0.47
+Vanuatu,CAIT,Agriculture,CH4,MtCO₂e,0.34,0.34,0.34,0.33,0.33,0.33
+Iceland,CAIT,Agriculture,CH4,MtCO₂e,0.31,0.32,0.31,0.29,0.3,0.31
+Montenegro,CAIT,Agriculture,CH4,MtCO₂e,0.31,0.32,0.31,0.3,0.3,0.3
+Jamaica,CAIT,Agriculture,CH4,MtCO₂e,0.31,0.34,0.34,0.35,0.35,0.34
+Comoros,CAIT,Agriculture,CH4,MtCO₂e,0.25,0.24,0.23,0.22,0.22,0.21
+Lebanon,CAIT,Agriculture,CH4,MtCO₂e,0.24,0.25,0.25,0.25,0.24,0.24
+Liberia,CAIT,Agriculture,CH4,MtCO₂e,0.23,0.22,0.2,0.21,0.21,0.22
+Gabon,CAIT,Agriculture,CH4,MtCO₂e,0.22,0.21,0.2,0.23,0.21,0.21
+Cyprus,CAIT,Agriculture,CH4,MtCO₂e,0.17,0.16,0.17,0.17,0.18,0.19
+Kuwait,CAIT,Agriculture,CH4,MtCO₂e,0.17,0.16,0.16,0.14,0.14,0.14
+Belize,CAIT,Agriculture,CH4,MtCO₂e,0.17,0.16,0.15,0.18,0.16,0.17
+Samoa,CAIT,Agriculture,CH4,MtCO₂e,0.15,0.16,0.15,0.14,0.14,0.14
+Trinidad and Tobago,CAIT,Agriculture,CH4,MtCO₂e,0.09,0.1,0.1,0.1,0.09,0.09
+Qatar,CAIT,Agriculture,CH4,MtCO₂e,0.08,0.25,0.15,0.19,0.16,0.15
+Cape Verde,CAIT,Agriculture,CH4,MtCO₂e,0.06,0.06,0.06,0.06,0.06,0.06
+Malta,CAIT,Agriculture,CH4,MtCO₂e,0.06,0.06,0.06,0.06,0.06,0.06
+Tonga,CAIT,Agriculture,CH4,MtCO₂e,0.06,0.06,0.06,0.06,0.06,0.06
+Solomon Islands,CAIT,Agriculture,CH4,MtCO₂e,0.06,0.06,0.06,0.06,0.05,0.05
+Micronesia,CAIT,Agriculture,CH4,MtCO₂e,0.05,0.05,0.04,0.04,0.04,0.04
+Dominica,CAIT,Agriculture,CH4,MtCO₂e,0.03,0.03,0.03,0.03,0.03,0.03
+Saint Lucia,CAIT,Agriculture,CH4,MtCO₂e,0.02,0.02,0.02,0.02,0.02,0.02
+Mauritius,CAIT,Agriculture,CH4,MtCO₂e,0.02,0.02,0.02,0.02,0.02,0.02
+Liechtenstein,CAIT,Agriculture,CH4,MtCO₂e,0.02,0.02,0.02,0.02,0.02,0.02
+Brunei,CAIT,Agriculture,CH4,MtCO₂e,0.02,0.02,0.02,0.02,0.02,0.02
+Barbados,CAIT,Agriculture,CH4,MtCO₂e,0.02,0.02,0.03,0.03,0.03,0.02
+Bahrain,CAIT,Agriculture,CH4,MtCO₂e,0.02,0.02,0.02,0.02,0.02,0.02
+Antigua and Barbuda,CAIT,Agriculture,CH4,MtCO₂e,0.02,0.01,0.02,0.02,0.02,0.02
+Tuvalu,CAIT,Agriculture,CH4,MtCO₂e,0.01,0.01,0.01,0.01,0.01,0.01
+Grenada,CAIT,Agriculture,CH4,MtCO₂e,0.01,0.01,0.01,0.01,0.01,0.01
+Kiribati,CAIT,Agriculture,CH4,MtCO₂e,0.01,0.01,0.01,0.01,0.01,0.01
+Saint Vincent and the Grenadines,CAIT,Agriculture,CH4,MtCO₂e,0.01,0.01,0.01,0.01,0.01,0.01
+Cook Islands,CAIT,Agriculture,CH4,MtCO₂e,0.01,0.01,0.01,0.01,0.01,0.01
+Equatorial Guinea,CAIT,Agriculture,CH4,MtCO₂e,0.01,0.01,0.01,0.01,0.01,0.01
+Bahamas,CAIT,Agriculture,CH4,MtCO₂e,0.01,0.01,0.01,0.01,0.01,0.01
+Maldives,CAIT,Agriculture,CH4,MtCO₂e,0,0,0,0,0,0
+Singapore,CAIT,Agriculture,CH4,MtCO₂e,0,0,0,0,0,0
+Marshall Islands,CAIT,Agriculture,CH4,MtCO₂e,0,0,0,0,0,0
+Niue,CAIT,Agriculture,CH4,MtCO₂e,0,0,0,0,0,0
+Andorra,CAIT,Agriculture,CH4,MtCO₂e,0,0,0,0,0,0
+Palau,CAIT,Agriculture,CH4,MtCO₂e,0,0,0,0,0,0
+Nauru,CAIT,Agriculture,CH4,MtCO₂e,0,0,0,0,0,0
+Saint Kitts and Nevis,CAIT,Agriculture,CH4,MtCO₂e,0,0.01,0,0.01,0.01,0.01
+Seychelles,CAIT,Agriculture,CH4,MtCO₂e,0,0,0,0,0,0
+Sao Tome and Principe,CAIT,Agriculture,CH4,MtCO₂e,0,0,0,0,0,0
