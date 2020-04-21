@@ -45,17 +45,34 @@ theme_set(mytheme)
 ```{r, echo=FALSE}
 # Load your datasets
 CH4.Emissions.raw <- read.csv("./Data/Raw/CH4_emissions_raw.csv")
-NDC.SDG.raw <- read.csv("./Data/Raw/ndc_sdg_raw.csv")
+NDC.SDG.2.4.raw <- read.csv("./Data/Raw/ndc_sdg_2.4_raw.csv")
+NDC.SDG.13.raw <- read.csv("./Data/Raw/ndc_sdg_13_raw.csv")
 
 #Look at column names
 colnames(CH4.Emissions.raw)
-colnames(NDC.SDG.raw)
+colnames(NDC.SDG.2.4.raw)
+colnames(NDC.SDG.13.raw)
 
 #Process the data - Select only columns of interest for both
+CH4.Emissions.processed <- CH4.Emissions.raw %>%
+  select(Country, Data.source, Sector, Gas, Unit, X2016)
 
-#Combine datasets
+NDC.SDG.2.4.processed <- NDC.SDG.2.4.raw %>%
+  select(Country, SDG.target, Status, Sector, Climate.response)
 
-#Save the new process dataset
+NDC.SDG.13.processed <- NDC.SDG.13.raw %>%
+  select(Country, SDG.target, Status, Sector, Climate.response)
+
+#Save the new processed dataset
+write.csv(CH4.Emissions.processed, row.names = FALSE, file = "./Data/Processed/CH4_emissions_processed.csv")
+
+write.csv(NDC.SDG.2.4.processed, row.names = FALSE, file = "./Data/Processed/ndc_sdg_2.4_processed.csv")
+
+write.csv(NDC.SDG.13.processed, row.names = FALSE, file = "./Data/Processed/ndc_sdg_13.processed.csv")
+
+#Combine datasets (using 'inner_join')
+Combined.CH4.NDC.SDG <- inner_join(CH4.Emissions.processed, NDC.SDG.2.4.processed, NDC.SDG.13.processed)
+
 ```
 
 
@@ -66,8 +83,18 @@ colnames(NDC.SDG.raw)
 \newpage
 
 # Dataset Information
+```{r}
 
+# Geom Bar Plot
+CH4GeomPlot <- ggplot(data, aes(x=Country, y=MethaneEmissions.MtCOCCe)) + 
+  geom_bar(stat = "identity", width=0.2, fill="#FF9999", colour="black") + 
+    theme(plot.title = element_text(face = "bold", size = 15, color = "deepskyblue4", hjust = 0.5), plot.subtitle = element_text(face = "italic", size = 13, hjust = 0.5), axis.text.x = element_text(size=12, angle=45, hjust=1, vjust=1),  axis.title.x = element_text(face = "italic", size=13), axis.title.y = element_text(face = "italic", size=13)) +
+    scale_fill_brewer(palette = "Set1") +
+  labs(title="Top 20 Methane (CH4) Emitters", subtitle = "Agricultural Sector, By Country (2016)", x="Country",y="CH4 Emissions (MtCO‚ÇÇe)")
 
+print(CH4GeomPlot)
+
+```
 
 \newpage
 

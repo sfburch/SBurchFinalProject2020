@@ -1,0 +1,195 @@
+"Country","Data.source","Sector","Gas","Unit","X2016"
+"India","CAIT","Agriculture","CH4","MtCO₂e",491.33
+"China","CAIT","Agriculture","CH4","MtCO₂e",363.78
+"Brazil","CAIT","Agriculture","CH4","MtCO₂e",339.93
+"European Union (27)","CAIT","Agriculture","CH4","MtCO₂e",219.52
+"United States","CAIT","Agriculture","CH4","MtCO₂e",198.27
+"Pakistan","CAIT","Agriculture","CH4","MtCO₂e",122.7
+"Indonesia","CAIT","Agriculture","CH4","MtCO₂e",109.8
+"Argentina","CAIT","Agriculture","CH4","MtCO₂e",83.87
+"Australia","CAIT","Agriculture","CH4","MtCO₂e",69.09
+"Ethiopia","CAIT","Agriculture","CH4","MtCO₂e",67.32
+"Myanmar","CAIT","Agriculture","CH4","MtCO₂e",59.97
+"Mexico","CAIT","Agriculture","CH4","MtCO₂e",58.56
+"Bangladesh","CAIT","Agriculture","CH4","MtCO₂e",58.37
+"Russia","CAIT","Agriculture","CH4","MtCO₂e",52.52
+"Nigeria","CAIT","Agriculture","CH4","MtCO₂e",51.59
+"Vietnam","CAIT","Agriculture","CH4","MtCO₂e",50.22
+"Philippines","CAIT","Agriculture","CH4","MtCO₂e",48.53
+"Thailand","CAIT","Agriculture","CH4","MtCO₂e",47.1
+"Sudan","CAIT","Agriculture","CH4","MtCO₂e",44.85
+"Chad","CAIT","Agriculture","CH4","MtCO₂e",43.1
+"France","CAIT","Agriculture","CH4","MtCO₂e",42.7
+"Colombia","CAIT","Agriculture","CH4","MtCO₂e",39.36
+"Tanzania","CAIT","Agriculture","CH4","MtCO₂e",36.8
+"Germany","CAIT","Agriculture","CH4","MtCO₂e",33.83
+"Kenya","CAIT","Agriculture","CH4","MtCO₂e",28.96
+"South Sudan","CAIT","Agriculture","CH4","MtCO₂e",28.34
+"New Zealand","CAIT","Agriculture","CH4","MtCO₂e",28.08
+"United Kingdom","CAIT","Agriculture","CH4","MtCO₂e",27.83
+"Venezuela","CAIT","Agriculture","CH4","MtCO₂e",26.67
+"Spain","CAIT","Agriculture","CH4","MtCO₂e",24.04
+"Canada","CAIT","Agriculture","CH4","MtCO₂e",23.8
+"Paraguay","CAIT","Agriculture","CH4","MtCO₂e",21.15
+"Italy","CAIT","Agriculture","CH4","MtCO₂e",20.82
+"Uzbekistan","CAIT","Agriculture","CH4","MtCO₂e",20.71
+"Turkey","CAIT","Agriculture","CH4","MtCO₂e",20.23
+"Mali","CAIT","Agriculture","CH4","MtCO₂e",20.11
+"Uruguay","CAIT","Agriculture","CH4","MtCO₂e",19.65
+"Nepal","CAIT","Agriculture","CH4","MtCO₂e",19.16
+"Angola","CAIT","Agriculture","CH4","MtCO₂e",18.8
+"Bolivia","CAIT","Agriculture","CH4","MtCO₂e",18.71
+"Peru","CAIT","Agriculture","CH4","MtCO₂e",17.89
+"Iran","CAIT","Agriculture","CH4","MtCO₂e",17.51
+"Niger","CAIT","Agriculture","CH4","MtCO₂e",17.51
+"Uganda","CAIT","Agriculture","CH4","MtCO₂e",17.14
+"Cambodia","CAIT","Agriculture","CH4","MtCO₂e",17.09
+"Somalia","CAIT","Agriculture","CH4","MtCO₂e",16.02
+"South Africa","CAIT","Agriculture","CH4","MtCO₂e",15.91
+"Egypt","CAIT","Agriculture","CH4","MtCO₂e",15.57
+"Ireland","CAIT","Agriculture","CH4","MtCO₂e",15.45
+"Madagascar","CAIT","Agriculture","CH4","MtCO₂e",15.07
+"Mongolia","CAIT","Agriculture","CH4","MtCO₂e",14.98
+"Kazakhstan","CAIT","Agriculture","CH4","MtCO₂e",14.42
+"Japan","CAIT","Agriculture","CH4","MtCO₂e",14.12
+"Poland","CAIT","Agriculture","CH4","MtCO₂e",13.98
+"Burkina Faso","CAIT","Agriculture","CH4","MtCO₂e",13.74
+"Guinea","CAIT","Agriculture","CH4","MtCO₂e",13.33
+"Democratic Republic of the Congo","CAIT","Agriculture","CH4","MtCO₂e",13.21
+"Netherlands","CAIT","Agriculture","CH4","MtCO₂e",13.15
+"Zambia","CAIT","Agriculture","CH4","MtCO₂e",12.53
+"Central African Republic","CAIT","Agriculture","CH4","MtCO₂e",12.13
+"Ukraine","CAIT","Agriculture","CH4","MtCO₂e",11.07
+"Afghanistan","CAIT","Agriculture","CH4","MtCO₂e",10.66
+"Belarus","CAIT","Agriculture","CH4","MtCO₂e",9.25
+"Mozambique","CAIT","Agriculture","CH4","MtCO₂e",9.25
+"South Korea","CAIT","Agriculture","CH4","MtCO₂e",9.21
+"Ecuador","CAIT","Agriculture","CH4","MtCO₂e",8.57
+"Romania","CAIT","Agriculture","CH4","MtCO₂e",8.4
+"Nicaragua","CAIT","Agriculture","CH4","MtCO₂e",7.83
+"Cuba","CAIT","Agriculture","CH4","MtCO₂e",7.81
+"Cameroon","CAIT","Agriculture","CH4","MtCO₂e",7.54
+"Morocco","CAIT","Agriculture","CH4","MtCO₂e",7.32
+"Laos","CAIT","Agriculture","CH4","MtCO₂e",7.2
+"Algeria","CAIT","Agriculture","CH4","MtCO₂e",6.98
+"Turkmenistan","CAIT","Agriculture","CH4","MtCO₂e",6.92
+"Senegal","CAIT","Agriculture","CH4","MtCO₂e",6.87
+"Zimbabwe","CAIT","Agriculture","CH4","MtCO₂e",6.61
+"Mauritania","CAIT","Agriculture","CH4","MtCO₂e",6.47
+"Belgium","CAIT","Agriculture","CH4","MtCO₂e",6.25
+"Dominican Republic","CAIT","Agriculture","CH4","MtCO₂e",6.2
+"Guatemala","CAIT","Agriculture","CH4","MtCO₂e",6.1
+"Denmark","CAIT","Agriculture","CH4","MtCO₂e",6.06
+"Ghana","CAIT","Agriculture","CH4","MtCO₂e",5.38
+"Chile","CAIT","Agriculture","CH4","MtCO₂e",5.23
+"Austria","CAIT","Agriculture","CH4","MtCO₂e",4.83
+"Portugal","CAIT","Agriculture","CH4","MtCO₂e",4.78
+"Malaysia","CAIT","Agriculture","CH4","MtCO₂e",4.73
+"Yemen","CAIT","Agriculture","CH4","MtCO₂e",4.63
+"Honduras","CAIT","Agriculture","CH4","MtCO₂e",4.49
+"Tajikistan","CAIT","Agriculture","CH4","MtCO₂e",4.46
+"Greece","CAIT","Agriculture","CH4","MtCO₂e",4.29
+"Azerbaijan","CAIT","Agriculture","CH4","MtCO₂e",4.02
+"Syria","CAIT","Agriculture","CH4","MtCO₂e",3.95
+"Switzerland","CAIT","Agriculture","CH4","MtCO₂e",3.93
+"Sri Lanka","CAIT","Agriculture","CH4","MtCO₂e",3.93
+"Namibia","CAIT","Agriculture","CH4","MtCO₂e",3.83
+"Côte d'Ivoire","CAIT","Agriculture","CH4","MtCO₂e",3.65
+"Iraq","CAIT","Agriculture","CH4","MtCO₂e",3.6
+"North Korea","CAIT","Agriculture","CH4","MtCO₂e",3.55
+"Kyrgyzstan","CAIT","Agriculture","CH4","MtCO₂e",3.46
+"Sweden","CAIT","Agriculture","CH4","MtCO₂e",3.38
+"Serbia","CAIT","Agriculture","CH4","MtCO₂e",3.31
+"Benin","CAIT","Agriculture","CH4","MtCO₂e",3.29
+"Haiti","CAIT","Agriculture","CH4","MtCO₂e",3.08
+"Czech Republic","CAIT","Agriculture","CH4","MtCO₂e",3.02
+"Eritrea","CAIT","Agriculture","CH4","MtCO₂e",2.97
+"Malawi","CAIT","Agriculture","CH4","MtCO₂e",2.77
+"Saudi Arabia","CAIT","Agriculture","CH4","MtCO₂e",2.77
+"Sierra Leone","CAIT","Agriculture","CH4","MtCO₂e",2.64
+"Botswana","CAIT","Agriculture","CH4","MtCO₂e",2.62
+"Norway","CAIT","Agriculture","CH4","MtCO₂e",2.52
+"Hungary","CAIT","Agriculture","CH4","MtCO₂e",2.5
+"Costa Rica","CAIT","Agriculture","CH4","MtCO₂e",2.46
+"Panama","CAIT","Agriculture","CH4","MtCO₂e",2.41
+"Finland","CAIT","Agriculture","CH4","MtCO₂e",2.3
+"Tunisia","CAIT","Agriculture","CH4","MtCO₂e",2.13
+"Albania","CAIT","Agriculture","CH4","MtCO₂e",2.1
+"Lithuania","CAIT","Agriculture","CH4","MtCO₂e",1.92
+"Bulgaria","CAIT","Agriculture","CH4","MtCO₂e",1.83
+"Rwanda","CAIT","Agriculture","CH4","MtCO₂e",1.7
+"Libya","CAIT","Agriculture","CH4","MtCO₂e",1.57
+"Bosnia and Herzegovina","CAIT","Agriculture","CH4","MtCO₂e",1.54
+"El Salvador","CAIT","Agriculture","CH4","MtCO₂e",1.52
+"Togo","CAIT","Agriculture","CH4","MtCO₂e",1.5
+"Croatia","CAIT","Agriculture","CH4","MtCO₂e",1.41
+"Republic of Congo","CAIT","Agriculture","CH4","MtCO₂e",1.36
+"Guyana","CAIT","Agriculture","CH4","MtCO₂e",1.22
+"United Arab Emirates","CAIT","Agriculture","CH4","MtCO₂e",1.22
+"Georgia","CAIT","Agriculture","CH4","MtCO₂e",1.2
+"Slovakia","CAIT","Agriculture","CH4","MtCO₂e",1.13
+"Guinea-Bissau","CAIT","Agriculture","CH4","MtCO₂e",1.11
+"Latvia","CAIT","Agriculture","CH4","MtCO₂e",1.08
+"Slovenia","CAIT","Agriculture","CH4","MtCO₂e",1.08
+"Oman","CAIT","Agriculture","CH4","MtCO₂e",1.04
+"Burundi","CAIT","Agriculture","CH4","MtCO₂e",0.98
+"Papua New Guinea","CAIT","Agriculture","CH4","MtCO₂e",0.97
+"Gambia","CAIT","Agriculture","CH4","MtCO₂e",0.93
+"Macedonia","CAIT","Agriculture","CH4","MtCO₂e",0.91
+"Armenia","CAIT","Agriculture","CH4","MtCO₂e",0.81
+"Lesotho","CAIT","Agriculture","CH4","MtCO₂e",0.79
+"Timor-Leste","CAIT","Agriculture","CH4","MtCO₂e",0.74
+"Moldova","CAIT","Agriculture","CH4","MtCO₂e",0.73
+"Estonia","CAIT","Agriculture","CH4","MtCO₂e",0.66
+"Fiji","CAIT","Agriculture","CH4","MtCO₂e",0.66
+"Jordan","CAIT","Agriculture","CH4","MtCO₂e",0.65
+"Eswatini","CAIT","Agriculture","CH4","MtCO₂e",0.6
+"Israel","CAIT","Agriculture","CH4","MtCO₂e",0.58
+"Suriname","CAIT","Agriculture","CH4","MtCO₂e",0.5
+"Djibouti","CAIT","Agriculture","CH4","MtCO₂e",0.47
+"Luxembourg","CAIT","Agriculture","CH4","MtCO₂e",0.44
+"Bhutan","CAIT","Agriculture","CH4","MtCO₂e",0.42
+"Vanuatu","CAIT","Agriculture","CH4","MtCO₂e",0.34
+"Iceland","CAIT","Agriculture","CH4","MtCO₂e",0.31
+"Montenegro","CAIT","Agriculture","CH4","MtCO₂e",0.31
+"Jamaica","CAIT","Agriculture","CH4","MtCO₂e",0.31
+"Comoros","CAIT","Agriculture","CH4","MtCO₂e",0.25
+"Lebanon","CAIT","Agriculture","CH4","MtCO₂e",0.24
+"Liberia","CAIT","Agriculture","CH4","MtCO₂e",0.23
+"Gabon","CAIT","Agriculture","CH4","MtCO₂e",0.22
+"Cyprus","CAIT","Agriculture","CH4","MtCO₂e",0.17
+"Kuwait","CAIT","Agriculture","CH4","MtCO₂e",0.17
+"Belize","CAIT","Agriculture","CH4","MtCO₂e",0.17
+"Samoa","CAIT","Agriculture","CH4","MtCO₂e",0.15
+"Trinidad and Tobago","CAIT","Agriculture","CH4","MtCO₂e",0.09
+"Qatar","CAIT","Agriculture","CH4","MtCO₂e",0.08
+"Cape Verde","CAIT","Agriculture","CH4","MtCO₂e",0.06
+"Malta","CAIT","Agriculture","CH4","MtCO₂e",0.06
+"Tonga","CAIT","Agriculture","CH4","MtCO₂e",0.06
+"Solomon Islands","CAIT","Agriculture","CH4","MtCO₂e",0.06
+"Micronesia","CAIT","Agriculture","CH4","MtCO₂e",0.05
+"Dominica","CAIT","Agriculture","CH4","MtCO₂e",0.03
+"Saint Lucia","CAIT","Agriculture","CH4","MtCO₂e",0.02
+"Mauritius","CAIT","Agriculture","CH4","MtCO₂e",0.02
+"Liechtenstein","CAIT","Agriculture","CH4","MtCO₂e",0.02
+"Brunei","CAIT","Agriculture","CH4","MtCO₂e",0.02
+"Barbados","CAIT","Agriculture","CH4","MtCO₂e",0.02
+"Bahrain","CAIT","Agriculture","CH4","MtCO₂e",0.02
+"Antigua and Barbuda","CAIT","Agriculture","CH4","MtCO₂e",0.02
+"Tuvalu","CAIT","Agriculture","CH4","MtCO₂e",0.01
+"Grenada","CAIT","Agriculture","CH4","MtCO₂e",0.01
+"Kiribati","CAIT","Agriculture","CH4","MtCO₂e",0.01
+"Saint Vincent and the Grenadines","CAIT","Agriculture","CH4","MtCO₂e",0.01
+"Cook Islands","CAIT","Agriculture","CH4","MtCO₂e",0.01
+"Equatorial Guinea","CAIT","Agriculture","CH4","MtCO₂e",0.01
+"Bahamas","CAIT","Agriculture","CH4","MtCO₂e",0.01
+"Maldives","CAIT","Agriculture","CH4","MtCO₂e",0
+"Singapore","CAIT","Agriculture","CH4","MtCO₂e",0
+"Marshall Islands","CAIT","Agriculture","CH4","MtCO₂e",0
+"Niue","CAIT","Agriculture","CH4","MtCO₂e",0
+"Andorra","CAIT","Agriculture","CH4","MtCO₂e",0
+"Palau","CAIT","Agriculture","CH4","MtCO₂e",0
+"Nauru","CAIT","Agriculture","CH4","MtCO₂e",0
+"Saint Kitts and Nevis","CAIT","Agriculture","CH4","MtCO₂e",0
+"Seychelles","CAIT","Agriculture","CH4","MtCO₂e",0
+"Sao Tome and Principe","CAIT","Agriculture","CH4","MtCO₂e",0
