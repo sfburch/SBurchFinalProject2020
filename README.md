@@ -13,7 +13,7 @@ CH4 levels, agriculture, SDG/NDC Commitments
 
 The purpose of this repository is to gain a better understanding of global CH4 (methane) emissions and if and what nations are doing to reduce such emissions within their agricultural sector. Why is this important and relevant? According to FCRN, "...global methane emissions are today adding heat to what is already a dangerously warming climate, a warming largely but not exclusively caused by the growth in fossil fuel use and by (partly livestock-induced) forest clearance. The context has changed, and the importance of animal related methane emissions has increased." More specifically, the objective of this analysis is to learn which nations emit the highest amount of CH4 within their agricultural sector and if those respective nations have made Nationally Determined Contributions (NDC) and Sustainable Development Goals (SDG) commitments to reduce their agriculturally-associated CH4 emissions. The following research questions will be addressed: 
 
-1. Using the most recent data (years 2013-2017), which nations have emitted the highest rates of CH4 within their respective agricultural sector? The research will be wrangled to assess the top 15 highest emitter nations.
+1. Using the most recent data (years 2013-2017), which nations have emitted the highest rates of CH4 within their respective agricultural sector? The research will be wrangled to assess the top 20 highest emitter nations.
 
 2. Which of those countries have made NDC and SDG commitments to reduce their agricultural sector CH4 emissions? Are those committments specific to reducing CH4 emissions from animal agricultural production?
 

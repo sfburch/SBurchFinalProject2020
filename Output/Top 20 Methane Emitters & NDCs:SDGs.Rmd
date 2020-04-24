@@ -1,0 +1,225 @@
+---
+output: 
+  pdf_document:
+    keep_tex: yes
+    fig_caption: yes
+    number_sections: yes
+geometry: margin=2.54cm
+title: "Examining Potential Linkages: Global Methane Emissions and Achieving the NDCs Across the Agricultural Sector"
+subtitle: https://github.com/sfburch/SBurchFinalProject2020
+author: Samantha Burch
+fontsize: 12pt
+mainfont: Times New Roman
+
+---
+
+\newpage
+\tableofcontents 
+\newpage
+\listoftables
+\newpage
+\listoffigures 
+\newpage
+
+# Rationale and Research Questions
+
+The growing rate at which the world emits methane (CH4), a powerful greenhouse gas, poses a threat to reaching the global 1.5°C/2°C target as set by the Paris Climate Agreement. According to the Food Climate Research Network (FCRN), "...global methane emissions are today adding heat to what is already a dangerously warming climate, a warming largely but not exclusively caused by the growth in fossil fuel use and by (partly livestock-induced) forest clearance. The context has changed, and the importance of animal related methane emissions has increased." 
+
+The purpose of this research is to gain a better understanding of global CH4 (methane) emissions and if and what nations are doing to reduce such emissions within their respective agricultural sectors. More specifically, the objective of this analysis is to learn which nations emit the highest amount of CH4 within their agricultural sector and if those respective nations have made Nationally Determined Contributions (NDC) and Sustainable Development Goals (SDG) commitments to reduce their agriculturally-associated CH4 emissions. The following research questions will be addressed: 
+
+1. Using the most recent data from 2016, which nations have emitted the highest rates of CH4 within their respective agricultural sector? The research will be wrangled to assess the top 20 highest emitter nations as well as the top 20 lowest emitter nations.
+
+2. Which of those nations have made NDC-SDG linkages and commitments to reduce CH4 emissions from their agricultural sectors? What percentage of those committments are specific to reducing CH4 emissions from animal agricultural production?
+
+\newpage
+
+# Dataset Information
+## 2.1 Database Information
+All data was accessed in April 2020 and has been downloaded from the following source: The Climate Watch Data Explorer, which provides information on both 'Historical GHG Emissions' and 'NDC-SDG Linkages' across nations and  their agricultural sectors. More information can be found here: https://www.climatewatchdata.org/data-explorer/historical-emissions?page=1.
+
+The CH4 emissions data set was downloaded as a full data set called “historical_emissions.” The
+csv file was saved as “Historical_CH4_emissions_raw.”
+
+The two NDC-SDG data sets were downloaded as full data sets called “ndc_sdg.” One csv file was saved as “ndc_sdg_2.4_raw” and the other as “ndc_sdg_13_raw.”
+
+Within the raw data sets, specific variables were then selected for the data analysis.The CH4 dataset: Of the 32 provided variables, only 6 were retained for analysis in the processed data. This csv file was saved as “CH4Emissions_Processed.” The NDC-SDG datasets: Of the 10 provided variables, only 6 variables were retained for analysis in the processed data. 
+
+## 2.2 Data Content Information
+
+## 2.3 Naming Conventions and File Formats
+
+\newpage
+# Data Wrangling
+```{r setup, include=FALSE}
+# Set your working directory
+setwd("~/Desktop/Data Analytics/SBurchFinalProject2020")
+getwd()
+
+# Load your packages
+library('tidyverse')
+library('knitr')
+library(viridis)
+install.packages("rvest")
+library(rvest)
+install.packages("ggrepel")
+library(ggrepel)
+install.packages("unpivotr")
+library(unpivotr)
+install.packages("ggmap")
+library(ggmap)
+install.packages("dplyr")
+library(dplyr)
+install.packages("rnaturalearth")
+library(rnaturalearth)
+install.packages("rnaturalearthdata")
+library(rnaturalearthdata)
+install.packages("sf")
+library(sf)
+install.packages("rgeos")
+library(rgeos)
+install.packages("sp")
+library(sp)
+install.packages("maps")
+library(maps)
+
+
+# Set your ggplot theme
+mytheme <- theme_classic() +
+  theme(axis.text = element_text(color = "dark blue"), 
+        legend.position = "top")
+theme_set(mytheme)
+```
+
+```{r, echo=FALSE}
+# Load your datasets
+CH4.Emissions.raw <- read.csv("../Data/Raw/CH4_emissions_raw.csv")
+HistoricalTop20CH4.Emissions.raw <- read.csv("../Data/Raw/Historical_CH4_emissions_raw.csv")
+NDC.SDG.2.4.raw <- read.csv("../Data/Raw/ndc_sdg_2.4_raw.csv")
+NDC.SDG.13.raw <- read.csv("../Data/Raw/ndc_sdg_13_raw.csv")
+
+#Look at column names
+colnames(CH4.Emissions.raw)
+print(colnames(CH4.Emissions.raw))
+colnames(NDC.SDG.2.4.raw)
+colnames(NDC.SDG.13.raw)
+
+#Process the data - Select only columns of interest for both
+
+CH4.Emissions.processed <- CH4.Emissions.raw %>%
+  select(Country, Data.source, Sector, Gas, Unit, X2016)
+
+colnames(CH4.Emissions.processed)
+
+NDC.SDG.2.4.processed <- NDC.SDG.2.4.raw %>%
+  select(Country, SDG.target, Indc.text, Status, Sector, Climate.response)
+
+NDC.SDG.13.processed <- NDC.SDG.13.raw %>%
+  select(Country, SDG.target, Indc.text, Status, Sector, Climate.response)
+
+#Save the new processed dataset
+write.csv(CH4.Emissions.processed, row.names = FALSE, file = "../Data/Processed/CH4_emissions_processed.csv")
+
+write.csv(NDC.SDG.2.4.processed, row.names = FALSE, file = "../Data/Processed/ndc_sdg_2.4_processed.csv")
+
+write.csv(NDC.SDG.13.processed, row.names = FALSE, file = "../Data/Processed/ndc_sdg_13.processed.csv")
+
+#Combine datasets
+Combined.CH4.2.4 <- full_join(CH4.Emissions.processed, NDC.SDG.2.4.processed)
+
+Combined.CH4.13 <- full_join(CH4.Emissions.processed, NDC.SDG.13.processed)
+
+Combined.2.4.13 <- rbind(NDC.SDG.2.4.processed, NDC.SDG.13.processed)
+
+ColRemovedCombined.2.4.13 <- Combined.2.4.13 %>%
+  select(Country, SDG.target, Indc.text)
+
+FinalJoinCH4SDGs <- full_join(CH4.Emissions.processed, ColRemovedCombined.2.4.13)
+
+write.csv(FinalJoinCH4SDGs, row.names = FALSE, file = "../Data/Processed/FinalJoinCH4SDGs_Processed.csv")
+
+```
+\newpage
+
+# Data Exploration
+After the datasets were wrangled to best explore potential linkages and relationships among variables, the data was then explored using both summary functions and multiple visualizations.  
+
+```{r}
+summary(CH4.Emissions.processed$X2016)
+summary(Combined.2.4.13$SDG.target)
+view(summary(Combined.2.4.13$SDG.target))
+summary(FinalJoinCH4SDGs$X2016) #12 NA's - how many of these apply to the top 20 emitter nations??
+summary(ColRemovedCombined.2.4.13$Indc.text)
+view(summary(ColRemovedCombined.2.4.13$Indc.text))
+
+
+# Geom_Bar Plot: Top 20 Highest CH4 Emitters
+
+data <- data.frame(
+  Country=c("India", "China", "Brazil", "European Union", "United States", "Pakistan", "Indonesia", "Argentina", "Australia","Ethiopia", "Myanmar", "Mexico", "Bangladesh", "Russia", "Nigeria", "Vietnam", "Philippines", "Thailand", "Sudan", "Chad") ,  
+  MethaneEmissions.MtCOCCe=c(491.33,363.78, 339.93, 219.52, 198.27, 122.7, 109.8, 83.87, 69.09, 67.32, 59.97, 58.56, 58.37, 52.52, 51.59, 50.22, 48.53, 47.1, 44.85, 43.1))
+
+CH4GeomPlot <- ggplot(data, aes(x= reorder(Country, -MethaneEmissions.MtCOCCe), y=MethaneEmissions.MtCOCCe)) +
+  geom_bar(stat = "identity", width=0.2, fill="#FF9999", colour="black") + 
+  geom_text(stat = "identity", aes(label = round(MethaneEmissions.MtCOCCe, 0)), vjust=-1) +
+    theme(plot.title = element_text(face = "bold", size = 15, color = "deepskyblue4", hjust = 0.5), plot.subtitle = element_text(face = "italic", size = 13, hjust = 0.5), plot.caption = element_text(size = 11, hjust = 0.5, color = "deepskyblue4"), axis.text.x = element_text(size=12, angle=45, hjust=1, vjust=1),  axis.title.x = element_text(face = "italic", size=13), axis.title.y = element_text(face = "italic", size=13)) +
+    scale_fill_brewer(palette = "Set1") +
+  labs(title="Top 20 Global Methane (CH4) Emitters", subtitle = "Agricultural Sector, By Country (2016)", x="Country",y="CH4 Emissions (MtCO2e)", caption = "Figure I: Highest levels of agriculturally-derived methane emissions across the world.") +
+  ylim(0,600)
+
+print(CH4GeomPlot)
+
+# Geom_Bar Plot: Lowest CH4 Emitters
+
+
+# Geom_Bar Plot: Which of the top 20 countries have made SDG commitments around CH4 reduction for the agricultural sector?
+
+
+# Geom_Bar Plot: Which of the top 20 countries have made SDG commitments around CH4 reduction for the agricultural sector specific to animal agriculture (enteric fermentation)?
+
+
+# GGMap Plot: Overlay of CH4 emitters and SDG commitments
+
+map.world <- map_data("world")
+
+
+```
+
+\newpage
+
+# Exploratory Analysis 
+what they need or want before actual analysis; distributions of variables of interest; time series sampling over time; potential relationships between variables; here's the intro to the data set, might not be statsistical but help someone orient themselves, provide rationale
+
+
+\newpage
+
+# Analysis
+
+***Have any of the top 20 countries made SDG commitments around CH4 reduction for the agricultural sector?***
+2.4: India, China, Brazil, Pakistan, Indonesia, Argentina, Ethiopia, Myanmar, Bangladesh, Nigeria, Vietnam, Philippines, Thailand, Sudan, Chad
+13: Brazil, Pakistan, Argentina, Nigeria, Vietnam, Sudan, Chad
+Both: Brazil, Pakistan, Argentina, Nigeria, Vietnam, Sudan, Chad
+None: EU?, USA, Mexico, Russia, Australia
+
+***Which of these countries have made animal-ag specific commitments?***
+2.4 (animal ag specific):
+13 (animal ag specific):
+Both:
+None: EU?, USA, Mexico, Russia, Australia
+
+
+## Question 1: <insert specific question here and add additional subsections for additional questions below, if needed>
+
+## Question 2: 
+
+
+
+
+\newpage
+
+# Summary and Conclusions
+
+
+\newpage
+
+# References
+<add references here if relevant, otherwise delete this section> 

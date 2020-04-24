@@ -85,12 +85,14 @@ Combined.CH4.NDC.SDG <- inner_join(CH4.Emissions.processed, NDC.SDG.2.4.processe
 # Dataset Information
 ```{r}
 
-# Geom Bar Plot
-CH4GeomPlot <- ggplot(data, aes(x= reorder(Country, -MethaneEmissions.MtCOCCe), y=MethaneEmissions.MtCOCCe)) + 
+# Geom_Bar Plot
+CH4GeomPlot <- ggplot(data, aes(x= reorder(Country, -MethaneEmissions.MtCOCCe), y=MethaneEmissions.MtCOCCe)) +
   geom_bar(stat = "identity", width=0.2, fill="#FF9999", colour="black") + 
-    theme(plot.title = element_text(face = "bold", size = 15, color = "deepskyblue4", hjust = 0.5), plot.subtitle = element_text(face = "italic", size = 13, hjust = 0.5), axis.text.x = element_text(size=12, angle=45, hjust=1, vjust=1),  axis.title.x = element_text(face = "italic", size=13), axis.title.y = element_text(face = "italic", size=13)) +
+  geom_text(stat = "identity", aes(label = round(MethaneEmissions.MtCOCCe, 0)), vjust=-1) +
+    theme(plot.title = element_text(face = "bold", size = 15, color = "deepskyblue4", hjust = 0.5), plot.subtitle = element_text(face = "italic", size = 13, hjust = 0.5), plot.caption = element_text(size = 11, hjust = 0.5, color = "deepskyblue4"), axis.text.x = element_text(size=12, angle=45, hjust=1, vjust=1),  axis.title.x = element_text(face = "italic", size=13), axis.title.y = element_text(face = "italic", size=13)) +
     scale_fill_brewer(palette = "Set1") +
-  labs(title="Top 20 Methane (CH4) Emitters", subtitle = "Agricultural Sector, By Country (2016)", x="Country",y="CH4 Emissions (MtCO‚ÇÇe)")
+  labs(title="Top 20 Global Methane (CH4) Emitters", subtitle = "Agricultural Sector, By Country (2016)", x="Country",y="CH4 Emissions (MtCO2e)", caption = "Figure I: Highest levels of agriculturally-derived methane emissions across the world.") +
+  ylim(0,600)
 
 print(CH4GeomPlot)
 

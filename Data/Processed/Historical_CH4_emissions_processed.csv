@@ -1,0 +1,21 @@
+Country,Data source,Sector,Gas,Unit,2016,2015,2014,2013,2012,2011
+India,CAIT,Agriculture,CH4,MtCO₂e,491.33,486.03,487.7,487.6,484.57,487.62
+China,CAIT,Agriculture,CH4,MtCO₂e,363.78,360.71,355.27,354.16,352.9,355.19
+Brazil,CAIT,Agriculture,CH4,MtCO₂e,339.93,338.01,333.62,330.38,334.73,334.38
+European Union (27),CAIT,Agriculture,CH4,MtCO₂e,219.52,219.22,217.51,215.75,216.05,216.84
+United States,CAIT,Agriculture,CH4,MtCO₂e,198.27,191.72,191.42,190.87,193.95,196.42
+Pakistan,CAIT,Agriculture,CH4,MtCO₂e,122.7,119.39,116.59,112.97,108.3,106.16
+Indonesia,CAIT,Agriculture,CH4,MtCO₂e,109.8,103.87,101.07,98.12,100.41,97.05
+Argentina,CAIT,Agriculture,CH4,MtCO₂e,83.87,81.72,82.13,80.99,79.32,76.85
+Australia,CAIT,Agriculture,CH4,MtCO₂e,69.09,86.49,91.59,81.27,123.03,122.79
+Ethiopia,CAIT,Agriculture,CH4,MtCO₂e,67.32,65.44,63.98,62.03,60.08,58.12
+Myanmar,CAIT,Agriculture,CH4,MtCO₂e,59.97,59.13,57.68,56.69,56.07,56.11
+Mexico,CAIT,Agriculture,CH4,MtCO₂e,58.56,57.78,56.9,56.32,55.61,57.61
+Bangladesh,CAIT,Agriculture,CH4,MtCO₂e,58.37,59.26,59.2,58.94,58.81,58.73
+Russia,CAIT,Agriculture,CH4,MtCO₂e,52.52,52.24,53.22,53.56,53.88,53.77
+Nigeria,CAIT,Agriculture,CH4,MtCO₂e,51.59,43.57,42.88,41.97,41.31,39.28
+Vietnam,CAIT,Agriculture,CH4,MtCO₂e,50.22,50.3,49.79,49.96,49.5,49.51
+Philippines,CAIT,Agriculture,CH4,MtCO₂e,48.53,49.23,49.87,49.99,49.6,48.6
+Thailand,CAIT,Agriculture,CH4,MtCO₂e,47.1,48.59,52.65,57.35,59.24,59.66
+Sudan,CAIT,Agriculture,CH4,MtCO₂e,44.85,44.7,44.16,44.25,44.42,42.81
+Chad,CAIT,Agriculture,CH4,MtCO₂e,43.1,40.19,13.51,13.81,14.13,13.96
