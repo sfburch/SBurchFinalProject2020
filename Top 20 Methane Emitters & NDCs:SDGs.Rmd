@@ -1,0 +1,323 @@
+---
+title: 'Examining Potential Linkages: Global Methane Emissions and Achieving the NDCs
+  Across the Agricultural Sector'
+author: "Samantha Burch"
+geometry: margin=2.54cm
+output:
+  word_document: default
+  pdf_document:
+    fig_caption: yes
+    keep_tex: yes
+    number_sections: yes
+mainfont: Times New Roman
+subtitle: https://github.com/sfburch/SBurchFinalProject2020
+fontsize: 12pt
+---
+
+\newpage
+\tableofcontents 
+\newpage
+\listoftables
+\newpage
+\listoffigures 
+\newpage
+
+# Rationale and Research Questions
+
+The growing rate at which the world emits methane (CH4), a powerful greenhouse gas, poses a threat to reaching the global 1.5°C/2°C target as set by the Paris Climate Agreement. According to the Food Climate Research Network (FCRN), "...global methane emissions are today adding heat to what is already a dangerously warming climate, a warming largely but not exclusively caused by the growth in fossil fuel use and by (partly livestock-induced) forest clearance. The context has changed, and the importance of animal related methane emissions has increased." [1]
+
+The purpose of this research is to gain a better understanding of global CH4 (methane) emissions and if and what nations are doing to reduce such emissions within their respective agricultural sectors. More specifically, the objective of this analysis is to learn which nations emit the highest amount of CH4 within their agricultural sector and if those respective nations have made Nationally Determined Contributions (NDC) and Sustainable Development Goal (SDG) commitments to reduce their agriculturally-associated CH4 emissions. The NDC-SDG linkage analysis that was taken into account was pulled from WRI and Climate Watch, which "examines the degree of alignment between the (I)NDCs and the 169 targets of the 2030 Sustainable Development Agenda." [2] In order to examine these linkages in tandem with CH4 emissions across the global agricultural sector, this research focused in on two of the 17 Sustainable Development Goals (SDGs). Those two SDGs include 13) Take urgent action to combat climate change and its impacts, and the SDG Target 2.4) By 2030, ensure sustainable food production systems and implement resilient agricultural practices that increase productivity and production, that help maintain ecosystems, that strengthen capacity for adaptation to climate change, extreme weather, drought, flooding and other disasters and that progressively improve land and soil quality." These two were selected as SDG 13 focuses specifically on taking action to reduce greehouse gases (GHG), including CH4, and SDG 2.4 on improving agricultural practices to, in part, reduce CH4 emissions.
+
+The following specific research questions will be addressed: 
+
+1. Using the most recent data from 2016, which nations have emitted the highest rates of CH4 within their respective agricultural sector? The research will be wrangled to assess the top 20 highest emitter nations as well as the top 20 lowest emitter nations.
+
+2. Which of those nations have made NDC-SDG linkages and commitments to reduce CH4 emissions from their agricultural sectors? What percentage of those committments are specific to reducing CH4 emissions from ***animal*** agricultural production?
+
+3. Is there a relationship between a nations' level of CH4 emissions and the SDG commitments they have or have not made?
+
+\newpage
+
+# Dataset Information
+## Database Information
+All data was accessed in April 2020 and has been downloaded from the following source: The Climate Watch Data Explorer, which provides information on both 'Historical GHG Emissions' and 'NDC-SDG Linkages' across nations and  their agricultural sectors. More information can be found here: https://www.climatewatchdata.org/data-explorer/historical-emissions?page=1.
+
+The CH4 emissions data set was downloaded as a full data set called “historical_emissions.” The
+csv file was saved as “Historical_CH4_emissions_raw.”
+
+The two NDC-SDG data sets were downloaded as full data sets called “ndc_sdg.” One csv file was saved as “ndc_sdg_2.4_raw” and the other as “ndc_sdg_13_raw.”
+
+Within the raw data sets, specific variables were then selected for the data analysis.For the CH4 dataset: Of the 32 provided variables, only 6 were retained for analysis in the processed data. This csv file was saved as “CH4Emissions_Processed.” For the NDC-SDG datasets: Of the 10 provided variables, only 6 variables were retained for analysis in the processed data. 
+
+## Data Content Information
+***For the CAIT CH4 Emissions Dataset:***
+**Country**: The "Country" column name is maintained. This variable includes 264 countries.
+**Year**: The Year variable was originally spread horizontally from 1990 – 2016. The data was processed to only include year 2016 as a single column and was renamed, "2016 Emissions" for visualization purposes. In code, this default column name is referred to as "X2016."
+**Data Source**: CAIT is where the data was retrieved. This column was ultimately removed in processing.
+**Sector**: The sector of focus for all of the CH4 emissions datasets: "Agriculture."
+**Gas**: The gas of focus is CH4 (Methane). 
+**Unit**: CH4 emissions are measured in MtCO2e. In processing, the column default name became "MtCO‚ÇÇe." Data range: 2016.
+
+***For the NDC-SDG 2.4 Dataset:***
+**Id**: This was removed from all processed and combined datasets.
+**Iso code3**: This was removed from all processed and combined datasets.
+**Country**: The "Country" column name is maintained. This variable includes 106 countries.
+**SDG**: This variable name was maintained and each respective row in this column contained the following information: "2. End hunger, achieve food security and improved nutrition and promote sustainable agriculture." This column was ultimately removed in processing.
+**SDG Target**: This variable name was maintained and each respective row in this column contained the following information: "2.4. By 2030, ensure sustainable food production systems and implement resilient agricultural practices that increase productivity and production, that help maintain ecosystems, that strengthen capacity for adaptation to climate change, extreme weather, drought, flooding and other disasters and that progressively improve land and soil quality."
+**Indc text**: "Indc" stands for "Intended Nationally Determined Contribution."
+**Status**: Statuses were deemed either 'Existing,' 'Increased yield,' or 'Future.'
+**Sector**: The sector of focus is "Agriculture."
+**Climate Response**: Climate responses were deemed either 'Adaptation' or 'Mitigation,' or 'Both.'
+**Type of information**: Type was deemed as 'Action' or 'Needs and Gaps.' This column was ultimately removed in processing.
+
+***For the NDC-SDG 13 Dataset:***
+**Id**: This was removed from all processed and combined datasets.
+**Iso code3**: This was removed from all processed and combined datasets.
+**Country**: The "Country" column name is maintained. This variable includes 37 countries.
+**SDG**: This variable name was maintained and each respective row in this column contained the following information: "13. Take urgent action to combat climate change and its impacts." This column was ultimately removed in processing."
+**SDG Target**: This variable name was maintained and rows contained one of the following three options: 1) "13.1. Strengthen resilience and adaptive capacity to climate-related hazards and natural disasters in all countries, 2) "13.2. Integrate climate change measures into national policies, strategies and planning.", or 3) "13.3 13.3. Improve education, awareness-raising and human and institutional capacity on climate change mitigation, adaptation, impact reduction and early warning."
+**Indc text**: "Indc" stands for "Intended Nationally Determined Contribution."
+**Status**: Statuses were deemed either 'Existing' or 'Future.'
+**Sector**: The sector of focus is "Agriculture."
+**Climate Response**: Climate responses were deemed either 'Adaptation' or 'Mitigation,' or 'Both.'
+**Type of information**: Type was deemed as 'Action' or 'Needs and Gaps.' This column was ultimately removed in processing.
+
+## Naming Conventions and File Formats
+
+***Folder Structure***
+The following folders are contained in the repository and include the following files within: 
+
+1. Data/Raw: This folder contains the original raw data as a csv file.
+2. Data/Processed: This folder contains the processed data as a csv file.
+3. Code: This folder contains all code from R Script.
+4. Output: This folder includes obvious descriptions and figures.
+
+***File Formats***
+The formats of all data files for the various purposes contained in the repository are included in a csv file format.
+
+***Naming Conventions***
+The file names in this research follow the following naming convention, atabasename_datatype_details_stage.format. More specifically,
+**databasename** : refers to the database where data originated
+**datatype** : description of the data
+**details** : additional descriptive details (these are specifcally key for the processed data)
+**stage** : refers to the stage in data management pipelines (whether something falls under 'raw,' 'cleaned,' or 'processed)
+**format**: non-propietary file format such as csv or text
+
+***Summary of Data Structure***
+Indicator        | Units                                                       | Data Structure
+---------------- | ------------------------------------------------------------|---------------
+Country          | Name                                                        | Factor
+Data Source      | CAIT                                                        | Factor
+Sector           | Agriculture                                                 | Factor
+Gas              | CH4                                                         | Factor
+Unit             | MtCO‚ÇÇe                                                    | Factor
+2016 Emissions   | Total amount of MtCO‚ÇÇe emitted                            | Numeric
+SDG              | Specifies which of the 17 SDGs the country has committed to | Numeric, Factor
+SDG Targets      | Specifies SDG-specific targets                              | Numeric, Factor
+Indc.text        | Description                                                 | Factor
+
+\newpage
+# Data Wrangling
+```{r setup, include=FALSE}
+# Set your working directory
+setwd("~/Desktop/Data Analytics/SBurchFinalProject2020")
+getwd()
+
+# Load your packages
+library('tidyverse')
+library('knitr')
+library(viridis)
+#install.packages("rvest")
+library(rvest)
+#install.packages("ggrepel")
+library(ggrepel)
+#install.packages("unpivotr")
+library(unpivotr)
+#install.packages("ggmap")
+library(ggmap)
+#install.packages("dplyr")
+library(dplyr)
+#install.packages("rnaturalearth")
+library(rnaturalearth)
+#install.packages("rnaturalearthdata")
+library(rnaturalearthdata)
+#install.packages("sf")
+library(sf)
+#install.packages("rgeos")
+library(rgeos)
+#install.packages("sp")
+library(sp)
+#install.packages("maps")
+library(maps)
+
+
+# Set your ggplot theme
+mytheme <- theme_classic() +
+  theme(axis.text = element_text(color = "dark blue"), 
+        legend.position = "top")
+theme_set(mytheme)
+```
+
+```{r, eval = TRUE, echo=FALSE}
+# Load your datasets
+CH4.Emissions.raw <- read.csv("./Data/Raw/CH4_emissions_raw.csv")
+HistoricalTop20CH4.Emissions.raw <- read.csv("./Data/Raw/CAIT_Historical_CH4_emissions_raw.csv")
+NDC.SDG.2.4.raw <- read.csv("./Data/Raw/ndc_sdg_2.4_raw.csv")
+NDC.SDG.13.raw <- read.csv("./Data/Raw/ndc_sdg_13_raw.csv")
+
+#Look at column names
+#colnames(CH4.Emissions.raw)
+#colnames(NDC.SDG.2.4.raw)
+#colnames(NDC.SDG.13.raw)
+
+#Process the data - Select only columns of interest for both
+
+CAIT.CH4.Emissions.processed <- CH4.Emissions.raw %>%
+  select(Country, Data.source, Sector, Gas, Unit, X2016)
+
+colnames(CAIT.CH4.Emissions.processed)
+
+CAIT.NDC.SDG.2.4.processed <- NDC.SDG.2.4.raw %>%
+  select(Country, SDG.target, Indc.text, Status, Sector, Climate.response)
+
+CAIT.NDC.SDG.13.processed <- NDC.SDG.13.raw %>%
+  select(Country, SDG.target, Indc.text, Status, Sector, Climate.response)
+
+#Save the new processed dataset
+write.csv(CAIT.CH4.Emissions.processed, row.names = FALSE, file = "../Data/Processed/CH4_emissions_processed.csv")
+
+write.csv(CAIT.NDC.SDG.2.4.processed, row.names = FALSE, file = "../Data/Processed/ndc_sdg_2.4_processed.csv")
+
+write.csv(CAIT.NDC.SDG.13.processed, row.names = FALSE, file = "../Data/Processed/ndc_sdg_13.processed.csv")
+
+#Combine datasets
+Combined.CH4.2.4 <- full_join(CAIT.CH4.Emissions.processed, CAIT.NDC.SDG.2.4.processed)
+
+Combined.CH4.13 <- full_join(CAIT.CH4.Emissions.processed, CAIT.NDC.SDG.13.processed)
+
+Combined.2.4.13 <- rbind(CAIT.NDC.SDG.2.4.processed, CAIT.NDC.SDG.13.processed)
+
+ColRemovedCombined.2.4.13 <- Combined.2.4.13 %>%
+  select(Country, SDG.target)
+
+FinalJoinCH4SDGs <- full_join(CAIT.CH4.Emissions.processed, ColRemovedCombined.2.4.13) %>%
+  mutate(Country=ifelse(Country=="United States", "United States of America", Country)) %>%
+  group_by(Country, X2016) %>%
+  summarise(Num_Target=n()) %>%
+  filter(Country %in% c("India", "China", "Brazil", "European Union", "United States of America", "Pakistan", "Indonesia", "Argentina", "Australia","Ethiopia", "Myanmar", "Mexico", "Bangladesh", "Russia", "Nigeria", "Vietnam", "Philippines", "Thailand", "Sudan", "Chad", "France"))
+
+
+write.csv(FinalJoinCH4SDGs, row.names = FALSE, file = "../Data/Processed/FinalJoinCH4SDGs_Processed.csv")
+
+```
+\newpage
+
+# Data Exploration
+After the datasets were wrangled to best explore potential linkages and relationships among variables, the data was then explored using both summary functions and multiple visualizations.  
+
+```{r}
+summary(CAIT.CH4.Emissions.processed$X2016)
+summary(Combined.2.4.13$SDG.target)
+view(summary(Combined.2.4.13$SDG.target))
+summary(FinalJoinCH4SDGs$X2016) #12 NA's - how many of these apply to the top 20 emitter nations??
+summary(ColRemovedCombined.2.4.13$Indc.text)
+view(summary(ColRemovedCombined.2.4.13$Indc.text))
+
+
+# Geom_Bar Plot: Top 20 Highest CH4 Emitters
+
+#data <- data.frame(
+  Country=c("India", "China", "Brazil", "European Union", "United States", "Pakistan", "Indonesia", "Argentina", "Australia","Ethiopia", "Myanmar", "Mexico", "Bangladesh", "Russia", "Nigeria", "Vietnam", "Philippines", "Thailand", "Sudan", "Chad", "France") ,  
+  MethaneEmissions.MtCOCCe=c(491.33,363.78, 339.93, 219.52, 198.27, 122.7, 109.8, 83.87, 69.09, 67.32, 59.97, 58.56, 58.37, 52.52, 51.59, 50.22, 48.53, 47.1, 44.85, 43.1, 43))
+
+#CH4GeomPlot <- ggplot(data, aes(x= reorder(Country, -MethaneEmissions.MtCOCCe), y=MethaneEmissions.MtCOCCe)) +
+  geom_bar(stat = "identity", width=0.2, fill="#FF9999", colour="black") + 
+  geom_text(stat = "identity", aes(label = round(MethaneEmissions.MtCOCCe, 0)), vjust=-1) +
+    theme(plot.title = element_text(face = "bold", size = 15, color = "deepskyblue4", hjust = 0.5), plot.subtitle = element_text(face = "italic", size = 13, hjust = 0.5), plot.caption = element_text(size = 11, hjust = 0.5, color = "deepskyblue4"), axis.text.x = element_text(size=12, angle=45, hjust=1, vjust=1),  axis.title.x = element_text(face = "italic", size=13), axis.title.y = element_text(face = "italic", size=13)) +
+    scale_fill_brewer(palette = "Set1") +
+  labs(title="Top 20 Global Methane (CH4) Emitters", subtitle = "Agricultural Sector, By Country (2016)", x="Country",y="CH4 Emissions (MtCO2e)", caption = "Figure I: Highest levels of agriculturally-derived methane emissions across the world.") +
+  ylim(0,600)
+
+print(CH4GeomPlot)
+
+# Geom point: Frequency of SDG2.4 Commitments across countries
+SDG2.4Plot <-
+ggplot(CAIT.NDC.SDG.2.4.processed, aes(x = Country, y = SDG.target)) +
+geom_point(aes(color = SDG.target)) +
+labs(x = "Country", y = "SDG 2.4 Commitment",
+color = "", shape = "")
+
+print(SDG2.4Plot)
+
+# GGMap Plot: Overlay of CH4 emitters and SDG commitments - Which of the top 20 countries have made SDG commitments around CH4 reduction for the agricultural sector?
+
+#map.world <- map_data("world")
+print(map.world)
+
+world <- ne_countries(scale = "medium", returnclass = "sf") %>%
+  left_join(FinalJoinCH4SDGs, by=c("sovereignt"="Country"))
+
+#class(world)
+
+#SDG13CommitmentsMap <- ggplot(data = world) +
+    geom_sf(aes(fill = Num_Target)) +
+    ggtitle("Top 20 CH4 Emitter Nations' Commitments to SDGs 2.4 & 13")  +
+    scale_fill_viridis_c(option="viridis", name="Number of Targets Set for SDG 2.4 & 13")
+
+print(SDG13CommitmentsMap)
+
+"Figure I: Top 20 CH4 Emitter Nations' Commitments to SDGs 2.4 & 13"
+
+```
+
+
+\newpage
+
+# Analysis
+
+This section provides some rationale for the potential relationships and linkages that can be made between nations' total agricultrally-derived CH4 emissions and what these nations have done to mitigate or adapt their nations' efforts to reduce these emissions. 
+
+The following analysis will review and summarize findings that address the three main research questions:
+
+##Question 1: ***Have any of the top 20 emitter nations made SDG commitments around CH4 reduction for the agricultural sector?***
+Please note that the research showed which of the analyzed nations made or did not make the following SDG commitments in line with their Intended Nationally Determined Contributions (INDCs) for reducing CH4 emissions:
+
+**Top 20 Emitter Nations that have committed, within their agricultural sector, to Sustainable Development Goal 2.4 and their number of set targets (note Map Figure above)** ("2.4: By 2030, ensure sustainable food production systems and implement resilient agricultural practices that increase productivity and production, that help maintain ecosystems, that strengthen capacity for adaptation to climate change, extreme weather, drought, flooding and other disasters and that progressively improve land and soil quality."): India (3), China (6), Brazil, Pakistan, Indonesia (1), Argentina (1), Ethiopia (8), Myanmar (3), Bangladesh (5), Nigeria (9), Vietnam (6), Philippines (1), Thailand (3), Sudan (6), Chad (14)
+
+**Top 20 Emitter Nations that have committed, within their agricultural sector, to Sustainable Development Goal 13 and their number of set targets (note Map Figure above)** ("13:"Take urgent action to combat climate change and its impacts."): Brazil (), Pakistan, Argentina (1), Nigeria (9), Vietnam (1), Sudan (2)
+
+**Top 20 Emitter Nations that have committed, within their agricultural sector, to both Sustainable Development Goal 2.4 and 13 and their total number of set targets (note Map Figure above)**: Brazil(3), Pakistan (15), Argentina (2), Nigeria (18), Vietnam (7), Sudan (8)
+
+**Top 20 Emitter Nations that have NOT committed, within their agricultural sector, to either Sustainable Development Goal 2.4 NOR 13 (0 targets set)**: European Union, USA, Mexico, Russia, Australia, France (unclear by data, potential data error - map shows 1 target, but 0 targets are listed in the full data)
+
+## Question 2: ***Which of these countries have made animal-ag specific commitments?***
+*Due to time constraints and technical challenges with text parsing in R Studio, this question was not answered and would be a meaningful follow-up research project.
+
+## Question 3: ***Is there any relationship between nations with lower CH4 emissions and the SDG commitments they have made?***
+This research demonstrated that the nations who have not made SDG commitments for SDGs 2.4 nor 13 in line with Intended Nationally Determined Contributions are the European Union, USA, Mexico, Russia, Australia. The European Union and the USA fall under the top five global CH4 emitters, meaning they are some of the largest contributors of CH4 emissions from agricultural production. In 2016, these five countries collectively emitted almost 600 MTCO2e of CH4 from agricultural production.
+
+A more general finding here is that additional data and data analysis is needed to fully answer this question more robustly. Unfortunately, the latest full dataset available for historical CH4 emissions on CAIT was from 2016. It would be most helpful to look at the SDG commitments and INDCs that nations made back in 2015 to address agriculturally-derived CH4, and begin to assess whether or not CH4 emissions have declined since those targets were set and those commitments were made. Once that data is available, a statistical regression should be run in order to do best analyze this. 
+
+The analysis was an insightful introduction into Rstudio and a key exercise in better understanding levels of CH4 emissions across the globe and what nations are doing to reduce these emissions across the agricultural sector.
+
+\newpage
+
+# Summary & Conclusions
+This research project has provided the following, invaluable findings:
+1) The top 20 nations that are contributing the *highest* rates of methane emissions in the agricultural sector;
+2) The top 20 nations that are contributing the *lowest* rates of methane emissions in the agricultural sector;
+3) And then, which of those nations have or have not made NDC-SDG commitments to reduce their agriculturally-derived methane emissions.'
+
+The nations who are some of the greatest contributers of agriculturally-derived methane, methane that is exacerbating the climate crisis - the EU, US, Russia, Mexico, and Australia - are also the only nations from this dataset who have not, as of 2016, made important NDC-SDG linkages to their respective CH4 emissions. This is a dangerous reality to our global goal of reaching well below 2 degrees celsisus above pre-industrial levels.
+
+It is important to note that there were a number of limitations to this study. One being that the study's scope narrowed in on two very specific Sustainable Development Goals, 2.4 and 13. While these two SDGs do focus on agricultural methane production, other SDGs should be further analyzed to see if any other linkages could be made between nations' CH4 emission levels and their efforts to reduce these levels to via agricultural improvements. For example, another one to examine would be SDG 15, "Life on Land." Additionally, as initial goal of this study was to focus on the role of addressing **animal** agriculture in reducing CH4 emissions. Unfortunately, due to time constraints and technical challenges with text parsing in R Studio, this topic was not explored. Lastly, the research scope only looked at year 2016, rather than historical emissions. However, this was purposeful, as to look at the current state and issues facing the globe, rather than a study to look at cumulative emissions over time.
+
+While this particular analysis provided few findings, it is important to note that the base research that was indeed found can give way/lend itself to future projects that could further explore linkages between CH4 emissions from the agriculture sector and the actions nations have actually taken to meet their Intended Nationally Determined Contributions (INDCs), to date. 
+
+\newpage
+
+# References
+
+[1]Garnett, T. (2017). Food Climate Research Network (FCRN): Grazed and confused? Ruminating on cattle, grazing systems, methane, nitrous oxide, the soil carbon sequestration question – and what it all means for greenhouse gas emissions. Retrieved from https://www.fcrn.org.uk/sites/default/files/project-files/fcrn_gnc_report.pdf
+
+[2]Climate Watch: Global Linkage Overview. (n.d.). Retrieved from https://www.climatewatchdata.org/ndcs-sdg?goal=2

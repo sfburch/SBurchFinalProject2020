@@ -59,7 +59,7 @@ The formats of all data files for the various purposes contained in the reposito
 My file names follow the following naming convention:
 **databasename** : refers to the database where data originated
 **datatype** : description of the data
-**details** : additional dexfriptive details (these are specifcally key for the processed data)
+**details** : additional descriptive details (these are specifcally key for the processed data)
 **stage** : refers to the stage in data management pipelines (whether something falls under 'raw,' 'cleaned,' or 'processed)
 **format**: non-propietary file format such as csv or text
 

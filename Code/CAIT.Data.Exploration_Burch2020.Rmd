@@ -1,0 +1,68 @@
+---
+title: "CAIT Data Exploration for Final Project - Burch 2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r}
+summary(CAIT.CH4.Emissions.processed$X2016)
+summary(Combined.2.4.13$SDG.target)
+view(summary(Combined.2.4.13$SDG.target))
+summary(FinalJoinCH4SDGs$X2016) #12 NA's - how many of these apply to the top 20 emitter nations??
+summary(ColRemovedCombined.2.4.13$Indc.text)
+view(summary(ColRemovedCombined.2.4.13$Indc.text))
+
+
+# Geom_Bar Plot: Top 20 Highest CH4 Emitters
+
+#data <- data.frame(
+  Country=c("India", "China", "Brazil", "European Union", "United States", "Pakistan", "Indonesia", "Argentina", "Australia","Ethiopia", "Myanmar", "Mexico", "Bangladesh", "Russia", "Nigeria", "Vietnam", "Philippines", "Thailand", "Sudan", "Chad", "France") ,  
+  MethaneEmissions.MtCOCCe=c(491.33,363.78, 339.93, 219.52, 198.27, 122.7, 109.8, 83.87, 69.09, 67.32, 59.97, 58.56, 58.37, 52.52, 51.59, 50.22, 48.53, 47.1, 44.85, 43.1, 43))
+
+#CH4GeomPlot <- ggplot(data, aes(x= reorder(Country, -MethaneEmissions.MtCOCCe), y=MethaneEmissions.MtCOCCe)) +
+  geom_bar(stat = "identity", width=0.2, fill="#FF9999", colour="black") + 
+  geom_text(stat = "identity", aes(label = round(MethaneEmissions.MtCOCCe, 0)), vjust=-1) +
+    theme(plot.title = element_text(face = "bold", size = 15, color = "deepskyblue4", hjust = 0.5), plot.subtitle = element_text(face = "italic", size = 13, hjust = 0.5), plot.caption = element_text(size = 11, hjust = 0.5, color = "deepskyblue4"), axis.text.x = element_text(size=12, angle=45, hjust=1, vjust=1),  axis.title.x = element_text(face = "italic", size=13), axis.title.y = element_text(face = "italic", size=13)) +
+    scale_fill_brewer(palette = "Set1") +
+  labs(title="Top 20 Global Methane (CH4) Emitters", subtitle = "Agricultural Sector, By Country (2016)", x="Country",y="CH4 Emissions (MtCO2e)", caption = "Figure I: Highest levels of agriculturally-derived methane emissions across the world.") +
+  ylim(0,600)
+
+print(CH4GeomPlot)
+
+# Geom point: Frequency of SDG2.4 Commitments across countries
+SDG2.4Plot <-
+ggplot(CAIT.NDC.SDG.2.4.processed, aes(x = Country, y = SDG.target)) +
+geom_point(aes(color = SDG.target)) +
+labs(x = "Country", y = "SDG 2.4 Commitment",
+color = "", shape = "")
+
+print(SDG2.4Plot)
+
+# GGMap Plot: Overlay of CH4 emitters and SDG commitments - Which of the top 20 countries have made SDG commitments around CH4 reduction for the agricultural sector?
+
+#map.world <- map_data("world")
+print(map.world)
+
+#world <- ne_countries(scale = "medium", returnclass = "sf") %>%
+  left_join(FinalJoinCH4SDGs, by=c("sovereignt"="Country"))
+
+#class(world)
+
+#SDG13CommitmentsMap <- ggplot(data = world) +
+    geom_sf(aes(fill = Num_Target)) +
+    ggtitle("Top 20 CH4 Emitter Nations' Commitments to SDGs 2.4 & 13")  +
+    scale_fill_viridis_c(option="viridis", name="Number of Targets Set for SDG 2.4 & 13")
+
+print(SDG13CommitmentsMap)
+
+"Figure I: Top 20 CH4 Emitter Nations' Commitments to SDGs 2.4 & 13"
+```

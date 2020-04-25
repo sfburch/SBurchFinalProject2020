@@ -1,0 +1,101 @@
+---
+title: "CAIT Data Wrangling for the Final Project - SBurch 2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+# Data Wrangling
+
+```{r setup, include=FALSE}
+# Set your working directory
+setwd("~/Desktop/Data Analytics/SBurchFinalProject2020")
+getwd()
+
+# Load your packages
+library('tidyverse')
+library('knitr')
+library(viridis)
+install.packages("rvest")
+library(rvest)
+install.packages("ggrepel")
+library(ggrepel)
+install.packages("unpivotr")
+library(unpivotr)
+install.packages("ggmap")
+library(ggmap)
+install.packages("dplyr")
+library(dplyr)
+install.packages("rnaturalearth")
+library(rnaturalearth)
+install.packages("rnaturalearthdata")
+library(rnaturalearthdata)
+install.packages("sf")
+library(sf)
+install.packages("rgeos")
+library(rgeos)
+install.packages("sp")
+library(sp)
+install.packages("maps")
+library(maps)
+
+
+# Set your ggplot theme
+mytheme <- theme_classic() +
+  theme(axis.text = element_text(color = "dark blue"), 
+        legend.position = "top")
+theme_set(mytheme)
+```
+
+```{r, echo=FALSE}
+# Load your datasets
+CH4.Emissions.raw <- read.csv("../Data/Raw/CH4_emissions_raw.csv")
+HistoricalTop20CH4.Emissions.raw <- read.csv("../Data/Raw/CAIT_Historical_CH4_emissions_raw.csv")
+NDC.SDG.2.4.raw <- read.csv("../Data/Raw/ndc_sdg_2.4_raw.csv")
+NDC.SDG.13.raw <- read.csv("../Data/Raw/ndc_sdg_13_raw.csv")
+
+#Look at column names
+colnames(CH4.Emissions.raw)
+print(colnames(CH4.Emissions.raw))
+colnames(NDC.SDG.2.4.raw)
+colnames(NDC.SDG.13.raw)
+
+#Process the data - Select only columns of interest for both
+
+CAIT.CH4.Emissions.processed <- CH4.Emissions.raw %>%
+  select(Country, Data.source, Sector, Gas, Unit, X2016)
+
+colnames(CAIT.CH4.Emissions.processed)
+
+CAIT.NDC.SDG.2.4.processed <- NDC.SDG.2.4.raw %>%
+  select(Country, SDG.target, Indc.text, Status, Sector, Climate.response)
+
+CAIT.NDC.SDG.13.processed <- NDC.SDG.13.raw %>%
+  select(Country, SDG.target, Indc.text, Status, Sector, Climate.response)
+
+#Save the new processed dataset
+write.csv(CAIT.CH4.Emissions.processed, row.names = FALSE, file = "../Data/Processed/CH4_emissions_processed.csv")
+
+write.csv(CAIT.NDC.SDG.2.4.processed, row.names = FALSE, file = "../Data/Processed/ndc_sdg_2.4_processed.csv")
+
+write.csv(CAIT.NDC.SDG.13.processed, row.names = FALSE, file = "../Data/Processed/ndc_sdg_13.processed.csv")
+
+#Combine datasets
+Combined.CH4.2.4 <- full_join(CAIT.CH4.Emissions.processed, CAIT.NDC.SDG.2.4.processed)
+
+Combined.CH4.13 <- full_join(CAIT.CH4.Emissions.processed, CAIT.NDC.SDG.13.processed)
+
+Combined.2.4.13 <- rbind(CAIT.NDC.SDG.2.4.processed, CAIT.NDC.SDG.13.processed)
+
+ColRemovedCombined.2.4.13 <- Combined.2.4.13 %>%
+  select(Country, SDG.target)
+
+FinalJoinCH4SDGs <- full_join(CAIT.CH4.Emissions.processed, ColRemovedCombined.2.4.13) %>%
+  group_by(Country, X2016) %>%
+  summarise(Num_Target=n()) %>%
+  ungroup() %>%
+  filter(Country %in% c("India", "China", "Brazil", "European Union", "United States", "Pakistan", "Indonesia", "Argentina", "Australia","Ethiopia", "Myanmar", "Mexico", "Bangladesh", "Russia", "Nigeria", "Vietnam", "Philippines", "Thailand", "Sudan", "Chad", "France")) %>%
+  mutate(Country=ifelse(Country=="United States", "United States of America", Country))
+
+write.csv(FinalJoinCH4SDGs, row.names = FALSE, file = "../Data/Processed/FinalJoinCH4SDGs_Processed.csv")
+
+```
